@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    
+    <p class="p1" >JavaScript Calculator</p>
+    <div class="container">
+
+        <p id="p2">0</p>
+        <div class="d1">
+            <p class="cln" onclick="clean()">C</p>
+            <p class="bck" onclick="bck()"><i class="fa-solid fa-delete-left"></i></p>
+            <p class="btn">/</p>
+            <p class="str" onclick="mult()">x</p>
+        </div>
+        <div class="d1">
+            <p class="btn">7</p>
+            <p class="btn">8</p>
+            <p class="btn">9</p>
+            <p class="btn">-</p>
+        </div>
+        <div class="d1">
+            <p class="btn">4</p>
+            <p class="btn">5</p>
+            <p class="btn">6</p>
+            <p class="btn">+</p>
+        </div>
+        <div class="d1">
+            <p class="btn">1</p>
+            <p class="btn">2</p>
+            <p class="btn">3</p>
+            <p class="equal" onclick="solve()">=</p>
+        </div>
+        <div class="d1">
+            <p class="btn" id="zr">0</p>
+            <p class="btn" >.</p>
+        </div>
+    </div>
+    <br><br>
+
+    <div class="Note">
+        <h4>Note : </h4>
+        <p> Please do not give Expressions like these "2++3//1" or "01+2-5/" otherwise it will not give u any answer and output will be same as expression only.</p>
+    </div>
+    
+
+    <script src="calc.js"></script>
+</body>
+</html>
